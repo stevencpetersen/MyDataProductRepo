@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Data Product Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="My Data Product Presentation">
+  <meta name="author" content="Steven C. Petersen">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>My Data Product Presentation</h1>
+    <h2>Data Products Class</h2>
+    <p>Steven C. Petersen<br/>Final Project</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This product is written using one of the latest development tool Shiny.</p>
+
+<p>This data product is really cool and useful. With it you can visualize left-tailed, centered, and right-tailed density plots and see the CDF value for the region being plotted. It is interactive and allows for varying the density and showing the probability associated with the selected value lying within the plotted region. The distribution has the domain of [-4,+4] and is normally distributed.</p>
+
+<p>There are many such products on the market, however this one has one key advanctage - it is <strong>free</strong>!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>The Product</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Below the default option is shown, a centered density plot.</p>
+
+<p><img src="assets/img/myproject.jpg" height="500" width="1000"/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Other Options</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Below you can see left-tailed and right-tailed density plots.</p>
+
+<p><img src="assets/img/left.jpg" height="250" width="500"/>
+<img src="assets/img/right.jpg" height="250" width="500"/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>The Code</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The code is very simple - standard R code is embedded in the Shiny server and is executed reactively, i.e. as the user interface options are changed. </p>
+
+<p>Below you can see how the data behind the program is generated using the seq and dnorm commands.</p>
+
+<pre><code class="r">x=seq(-4,4,length=200)
+y=dnorm(x)
+str(x)
+</code></pre>
+
+<pre><code>##  num [1:200] -4 -3.96 -3.92 -3.88 -3.84 ...
+</code></pre>
+
+<pre><code class="r">str(y)
+</code></pre>
+
+<pre><code>##  num [1:200] 0.000134 0.000157 0.000184 0.000215 0.000251 ...
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Product'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Other Options'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The Code'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
