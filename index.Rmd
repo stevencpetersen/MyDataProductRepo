@@ -17,9 +17,9 @@ This product is written using one of the latest development tools, Shiny.
 
 This data product is really cool and useful. With it you can visualize left-tailed, centered, and right-tailed density plots and see the CDF value for the region being plotted. It is interactive and allows for varying the density and showing the probability associated with the selected value lying within the plotted region. The distribution has the domain of [-4,+4] and is normally distributed.
 
-This applet can be a real timesaver, allowing one to visualize various scenarious without coding, in real time. It could possibly be used as a teaching tool to show the basics of density and probability to those beginning to learn about statistics and prediction. 
+This applet can be a real time saver, allowing one to visualize various scenarios without coding, in real time. It could possibly be used as a teaching tool to show the basics of density and probability to those beginning to learn about statistics and prediction. 
 
-There are many such products on the market, however this one has one key advanctage - it is FREE! (Of course so are many others, but this one is written in Shiny...)
+There are many such products on the market, however this one has one key advantage - it is FREE! (Of course so are many others, but this one is written in Shiny...)
 
 
 ---
@@ -40,7 +40,7 @@ Below you can see left-tailed and right-tailed density plots.
 ---
 
 ## The Code
-The code is very simple - standard R code is embedded in the Shiny server and is executed reactively, i.e. as the user interface options are changed. 
+The code is very simple - standard R code is embedded in the Shiny server and is executed re-actively, i.e. as the user interface options are changed. 
 
 Below you can see how the data behind the plot is generated using the seq and dnorm commands.
 
